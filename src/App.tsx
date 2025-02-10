@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import './App.css'
+import AboutMe from './components/AboutMe'
 
 function App() {
   const [darkMode, setDarkMode] = useState(false)
@@ -11,14 +12,7 @@ function App() {
       <button onClick={() => setDarkMode((prevMode) => !prevMode)}>
         {darkMode ? 'Light Mode' : 'Dark Mode'}
       </button>
-      <div>
-        <h2>About Me</h2>
-        <p>
-          I am an alumni from 2021A class at Resilient Coders. Now joining
-          Resilliant Ascend to up my skills in software engineering and furthur
-          my career.
-        </p>
-      </div>
+      <AboutMe></AboutMe>
       <div className="project-section">
         {' '}
         <h2>Projects</h2>
